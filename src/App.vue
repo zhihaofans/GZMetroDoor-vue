@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <el-page-header content="detail" @back="goBack" />
+  <img alt="Vue logo" src="./assets/logo.png" />
 </template>
+<script setup>
+const goBack = () => {
+  console.log("go back");
+};
+</script>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
